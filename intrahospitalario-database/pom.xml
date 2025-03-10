@@ -1,0 +1,62 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>es.ja.csalud.sas.prescriptorunico.intrahospitalario</groupId>
+		<artifactId>intrahospitalario</artifactId> 
+		<version>1.0.0</version>
+	</parent>
+
+	<artifactId>intrahospitalario-database</artifactId>
+    <name>intrahospitalario-database</name>
+    <description>Módulo database del servicio de XXX</description>
+    <packaging>jar</packaging>
+
+	<dependencies>
+		<!-- Dependencias Arquitectura -->	
+        <dependency>
+            <groupId>es.ja.csalud.sas.arquitectura-framework</groupId>
+            <artifactId>arquitectura-framework-kernel</artifactId>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>es.ja.csalud.sas.arquitectura-framework</groupId>
+            <artifactId>arquitectura-framework-infraestructura-jpa</artifactId>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- Dependencias Open Telemetry -->
+		<!-- <dependency>
+			<groupId>io.opentelemetry</groupId>
+			<artifactId>opentelemetry-sdk</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>io.opentelemetry</groupId>
+			<artifactId>opentelemetry-api</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>io.opentelemetry</groupId>
+			<artifactId>opentelemetry-exporter-logging</artifactId>
+		</dependency> -->
+        
+		<!-- Dependencias Módulos -->        
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>intrahospitalario-domain</artifactId>
+        </dependency>
+        
+		<!-- Dependencias Externas -->  
+        <dependency>
+            <groupId>jakarta.persistence</groupId>
+            <artifactId>jakarta.persistence-api</artifactId>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>jakarta.enterprise</groupId>
+            <artifactId>jakarta.enterprise.cdi-api</artifactId>
+            <scope>provided</scope>
+        </dependency>    
+	</dependencies>
+</project>

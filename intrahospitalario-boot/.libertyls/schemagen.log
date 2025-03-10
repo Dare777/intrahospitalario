@@ -1,0 +1,3 @@
+CWWKG0030E: La referencia de pid com.ibm.ws.jca.resourceAdapter indicada en la extensión ibm:reference no existe.
+CWWKG0030E: La referencia de pid com.ibm.ws.sslchannel.options indicada en la extensión ibm:reference no existe.
+CWWKG0030E: La referencia de pid com.ibm.ws.security.authentication.internal.jaas.jaasLoginContextEntry indicada en la extensión ibm:reference no existe.

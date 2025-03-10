@@ -1,0 +1,52 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>es.ja.csalud.sas.prescriptorunico.intrahospitalario</groupId>
+		<artifactId>intrahospitalario</artifactId>
+		<version>1.0.0</version>
+	</parent>
+
+	<artifactId>intrahospitalario-domain</artifactId>
+	<name>intrahospitalario-domain</name>
+	<description>Módulo domain del servicio de XXX</description>
+	<packaging>jar</packaging>
+	
+	<dependencies>
+		<!-- Dependencias Arquitectura -->
+		<dependency>
+			<groupId>es.ja.csalud.sas.arquitectura-framework</groupId>
+			<artifactId>arquitectura-framework-kernel</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<!-- Dependencias Open Telemetry -->
+		<!-- <dependency>
+			<groupId>io.opentelemetry</groupId>
+			<artifactId>opentelemetry-sdk</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>io.opentelemetry</groupId>
+			<artifactId>opentelemetry-api</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>io.opentelemetry</groupId>
+			<artifactId>opentelemetry-exporter-logging</artifactId>
+		</dependency> -->
+
+		<!-- Para test -->
+		<dependency>
+			<groupId>org.junit.jupiter</groupId>
+			<artifactId>junit-jupiter-engine</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.mockito</groupId>
+			<artifactId>mockito-junit-jupiter</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.mockito</groupId>
+			<artifactId>mockito-core</artifactId>
+		</dependency>
+	</dependencies>
+</project>
