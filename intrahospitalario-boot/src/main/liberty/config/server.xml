@@ -7,7 +7,7 @@
         <feature>jsonb</feature>
         <feature>cdi</feature>
         <feature>mpConfig</feature>
-        <feature>mpMetrics</feature>
+        <!-- <feature>mpMetrics</feature> -->
         <feature>mpHealth</feature>
         <feature>mpTelemetry-2.0</feature>
     </featureManager>

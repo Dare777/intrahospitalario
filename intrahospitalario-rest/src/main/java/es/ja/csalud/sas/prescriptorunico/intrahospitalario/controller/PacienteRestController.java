@@ -35,10 +35,12 @@ public class PacienteRestController {
     @Produces(MediaType.APPLICATION_JSON)
     public Response searchPacienteByCriteria(@BeanParam PacienteDtoRest dto) {
         
-    	return Response
-    			.status(Response.Status.OK)
-    			.entity(this.searchServicePaciente.findByCriteria(this.restMapper.mapTo(dto)))
-    			.build();
+    	// return Response
+    	// 		.status(Response.Status.OK)
+    	// 		.entity(this.searchServicePaciente.findByCriteria(this.restMapper.mapTo(dto)))
+    	// 		.build();
+
+        return Response.ok(System.getProperties()).status(Response.Status.OK).build();
         
     }
 }
