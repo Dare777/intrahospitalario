@@ -40,7 +40,8 @@ public class PacienteRestController {
     	// 		.entity(this.searchServicePaciente.findByCriteria(this.restMapper.mapTo(dto)))
     	// 		.build();
 
-        return Response.ok(System.getProperties()).status(Response.Status.OK).build();
+        // return Response.ok(System.getProperties()).status(Response.Status.OK).build();
+        return Response.ok("¡¡HE LLEGADO AL ENDPOINT DE PRUEBA!!").status(Response.Status.OK).build();
         
     }
 }
